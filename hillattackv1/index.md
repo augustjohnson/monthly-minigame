@@ -8,7 +8,10 @@ You may enter only a single soldier allocation strategy, and I will run the foll
 
 Remember, you a playing against EVERY other player, and your net score for all rounds is what will be added up.  Their strategies are not visible to you and will be unknown to everyone except the game administrator until the game itself is run.
 
-Once the game itself is run, a winner will be declared, and their 
+Once the game itself is run, a winner will be declared, and their
+
+### Entry
+Fill out **[this Google form](https://goo.gl/forms/DbDHfCkP9V8SY4xI3)**.  Please fill it out only once.  You can go back and edit your entry until June 15th, 2017.
 
 ### Example
 * Alice allocates her soldiers evenly for all hills.
