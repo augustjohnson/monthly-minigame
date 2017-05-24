@@ -4,13 +4,16 @@
 You and your single opponent are both attacking five hills with your soldiers.  If you attack the hill with more soldiers, then you will win the hill. If you and your opponent attack with the same number of soldiers, you split the points, rounded down. Each hill is worth a different number of points, from 1 to 5.  You have 50 soldiers to allocate.  Hill 1 is worth 1 hill point, Hill 5 is worth 5 hill points.
 
 ### Tournament Rules
-You may enter only a single soldier allocation strategy, and I will run the following algorithm against your entry, pitting you against each enemy.  The player whose allocation won them the most hill-points total across all competitions will be declared the winner.
+You may enter only a single soldier allocation strategy, and I will run the following algorithm against your entry, pitting you against each other entrant.  The player whose allocation won them the most hill-points total across all competitions will be declared the winner.
 
-Remember, you a playing against EVERY other player, and your net score for all rounds is what will be added up.
+Remember, you a playing against EVERY other player, and your net score for all rounds is what will be added up.  Their strategies are not visible to you and will be unknown to everyone except the game administrator until the game itself is run.
+
+Once the game itself is run, a winner will be declared, and their 
 
 ### Example
 * Alice allocates her soldiers evenly for all hills.
 * Bob allocates his based on hill value, evenly distributing the leftover soldiers.
+* Carol is bad at this.
 
 | Hill | Alice       | Bob         |  Carol       |
 | ---- |-------------| ------------|  ------------|
