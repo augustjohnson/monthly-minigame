@@ -7,7 +7,12 @@ import csv
 import fileinput
 import sys
 
-#Read in input
+#Global Settings
+hillcount = 5
+soldiercount = 50
+
+
+#Read in input, a filename.
 filename = sys.argv[1]
 
 #Read in the entries.
@@ -15,20 +20,21 @@ entries = []
 with open(filename, 'r') as f:
     reader = csv.reader(f)
     for row in reader:
-        entries.append({'timestamp': row[0], 'name': row[1], 'soldiers': row[2:], 'score': 0})
+        entries.append({'name': row[1], 'soldiers': row[2:], 'score': 0})
 f.close()
 
 #Delete the column headers.
 del entries[0]
 
 #Adjust the soldiers from strings to ints, and value check them.
+print('There are ' + str(len(entries)) + ' entrants.')
 for entry in entries:
 	soldierints = []
 	for soldier in entry.get('soldiers'):
 		soldierints.append(int(soldier))
 	
 	#Max soldiers is 50.  Negative validation happens on the form, so 0 is the lowest value.
-	if sum(soldierints) > 50:
+	if sum(soldierints) > soldiercount:
 		print(entry.get('name') + '\'s soldiers have been smitten because they entered ' +  str(sum(soldierints)) + '.')
 		for i in range(len(soldierints)): soldierints[i]=0 #SMITE THEM
 	
@@ -38,19 +44,21 @@ for entry in entries:
 #Create matchups using built in combinations function.
 matchups = list(itertools.combinations(entries, 2))
 
+print('Running ' + str(len(matchups)) + ' matchups.') 
 #Play the matchups.
 for matchup in matchups:
 	leftpoints = 0
 	rightpoints = 0
 	#Iterate 5 times, for 5 hills.
-	for i in range(1,6):
-		if matchup[0].get('soldiers')[i-1] > matchup[1].get('soldiers')[i-1]:
-			leftpoints += i
-		if matchup[0].get('soldiers')[i-1] == matchup[1].get('soldiers')[i-1]:
-			leftpoints += i//2
-			rightpoints += i//2
-		if matchup[0].get('soldiers')[i-1] < matchup[1].get('soldiers')[i-1]:
-			rightpoints += i
+	for i in range(0, hillcount):
+		hillpoints = i + 1
+		if matchup[0].get('soldiers')[i] > matchup[1].get('soldiers')[i]:
+			leftpoints += hillpoints
+		if matchup[0].get('soldiers')[i] == matchup[1].get('soldiers')[i]:
+			leftpoints += hillpoints//2
+			rightpoints += hillpoints//2
+		if matchup[0].get('soldiers')[i] < matchup[1].get('soldiers')[i]:
+			rightpoints += hillpoints
 
 	entries[entries.index(matchup[0])]['score'] += leftpoints
 	entries[entries.index(matchup[1])]['score'] += rightpoints
