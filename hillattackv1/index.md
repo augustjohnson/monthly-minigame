@@ -1,5 +1,8 @@
 # Game:  Hill Attack (v1).
 
+### Status
+This game has concluded.  See the results [here](/results.md).
+
 ### Game Description
 You and your single opponent are both attacking five hills with your soldiers.  If you attack the hill with more soldiers, then you will win the hill. If you and your opponent attack with the same number of soldiers, you split the points, rounded down. Each hill is worth a different number of points, from 1 to 5.  You have 50 soldiers to allocate.  Hill 1 is worth 1 hill point, Hill 5 is worth 5 hill points.
 
