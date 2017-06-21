@@ -1,13 +1,10 @@
 ### Results
 First some housekeeping.  I had to edit the code a bunch because I totally messed up some indexes, and it resulted in entire hills not even being counted.  Feel free to review the changes, the version that I have checked in includes all current logic, including analytics (to generate these beautiful charts below).
 
-### Winner(s)!
-We had a 3 way tie for first place.  The following individuals scored a total of 55 points.
-
 ![](scores.svg)
 
-
-The winners had a 3 way tie, each with 55 points.
+### Winner(s)!
+We had a 3 way tie for first place.  The following individuals scored a total of 55 points.
 * Adam C Johnson
 * Kyle
 * Ozymandias
