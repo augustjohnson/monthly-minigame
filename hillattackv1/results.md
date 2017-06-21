@@ -4,7 +4,7 @@ First some housekeeping.  I had to edit the code a bunch because I totally messe
 ### Winner(s)!
 We had a 3 way tie for first place.  The following individuals scored a total of 55 points.
 
-![](/scores.svg)
+![](scores.svg)
 
 
 The winners had a 3 way tie, each with 55 points.
@@ -15,7 +15,7 @@ The winners had a 3 way tie, each with 55 points.
 The strategies are varied, even among the winners. Adam and Ozymandias both went all in on Hill 4, scoring some serious points, but Kyle seemed to play just enough in all hills to significantly take home some hill points, enough to tie with the others.
 
 
-![](/winchart-Adam C Johnson.svg) ![](/winchart-Kyle.svg) ![](/winchart-Ozymandias.svg)
+![](winchart-Adam C Johnson.svg) ![](winchart-Kyle.svg) ![](winchart-Ozymandias.svg)
 
 
 ### Results Detail (log)
